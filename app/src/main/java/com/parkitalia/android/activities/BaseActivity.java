@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 public class BaseActivity extends AppCompatActivity
 {
+	String a;
     ProgressDialog progress;
 
     public void showProgressing(Context context, String message)
