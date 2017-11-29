@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/img1"
+        android:id="@+id/image"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/name"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="abc"/>
+    <TextView
+        android:layout_width="200sp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/address"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="test gfgfg"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/web_link"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="www.rinki.co"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="200sp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:id="@+id/phone_number"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="+343455656"/>
+    <TextView
+        android:layout_width="200sp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:id="@+id/accomodation_type"
+        android:textColor="@android:color/black"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Type"/>
+    <TextView
+
+        android:layout_width="200sp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/gps_type"
+        android:background="@color/green2"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:text="Gps :fddgd"/>
+
+
+</LinearLayout>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/newbgdashboard"
+              android:orientation="vertical"
+              android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="top|center"
+
+                    android:padding="15dp"
+                    android:src="@drawable/logo1"/>
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="20dp"
+                    android:src="@drawable/nniicon"
+                    />
+            </LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"/>
+
+            <TextView
+                android:id="@+id/search_by_zipcode"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:background="@color/green2"
+                android:gravity="center"
+                android:text="enter city , place or zipcode"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:visibility="gone"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"/>
+
+        <LinearLayout
+            android:id="@+id/dashboard_location_by_current_location"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:alpha="0.7"
+            android:background="@color/green3"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/nnlocationicon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="SEARCH BY CURRENT LOCATION "
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"/>
+
+            <!--    <TextView
+                    android:id="@+id/dashboard_location_tv_location_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:text=" Cortona,Italy"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"/>
+
+        <LinearLayout
+            android:id="@+id/dashboard_location_by_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:alpha="0.7"
+            android:background="@color/green3"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/nnnstaricon"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:gravity="right"
+                    android:text="SEARCH BY ADDRESS"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    android:id="@+id/textView6" />
+
+               <!-- <TextView
+                    android:id="@+id/dashboard_location_tv_last_searched_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:text=" None Saved"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lastSearchScreen"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:alpha="0.7"
+            android:background="@color/green3"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/piennicon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="LAST SEARCH RESULT "
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"/>
+
+              <!--  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:text=" City Of Flor...."
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"/>
+-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".8"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_account"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:src="@drawable/nnnusericon"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="My Account"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/findmycar"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:src="@drawable/nnnfindmycar"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="Find My Car"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:src="@drawable/nninfoicon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="top|center"
+                        android:text="Info"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

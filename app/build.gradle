@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.parkitalia.android"
+        minSdkVersion 17
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+//        incremental true
+//        jumboMode = true
+//        jumboMode = true
+        javaMaxHeapSize "4g" // 2g should be also OK
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //facebook......................//
+
+
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+   //compile 'com.squareup.picasso:picasso:2.6.0-SNAPSHOT'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.10.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.google.android.gms:play-services-maps:11.0.2'
+    compile 'com.google.android.gms:play-services:11.0.2'
+    compile 'com.google.maps.android:android-maps-utils:0.4.+'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.google.android.gms:play-services-ads:11.0.2'
+    compile 'com.google.android.gms:play-services-auth:11.0.2'
+    compile 'com.google.android.gms:play-services-gcm:11.0.2'
+}

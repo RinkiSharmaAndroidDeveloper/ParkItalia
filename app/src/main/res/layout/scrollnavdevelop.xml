@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/user"
+                android:gravity="center_vertical"
+                android:text="User name"
+                android:id="@+id/named_disp2"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/black"/>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/srchblack"
+                android:gravity="center_vertical"
+                android:text="Recent Search"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/black"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/myaccount"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/green1"
+            android:text="My Account"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/viewtutorials"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/green1"
+            android:text="View Tutorial"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Filters"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/resetfilter"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/green1"
+                android:text="Reset Filters"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Select the type of parking"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+
+            <CheckBox
+
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox1"
+                android:layout_marginTop="20dp"
+                android:button="@drawable/checkbox_selector"
+                android:text="Free Parking"
+                android:textSize="20sp"
+                />
+
+
+            <CheckBox
+                android:visibility="gone"
+
+                android:id="@+id/checkbox2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:button="@drawable/checkbox_selector"
+                android:text="Paid Parking"
+                android:textSize="20sp"
+                />
+
+            <CheckBox
+                android:visibility="gone"
+
+                android:id="@+id/checkbox3"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:button="@drawable/checkbox_selector"
+                android:text="Motor Cycle"
+                android:textSize="20sp"
+                />
+
+            <CheckBox
+                android:visibility="gone"
+
+                android:id="@+id/checkbox4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:button="@drawable/checkbox_selector"
+                android:text="RV parking"
+                android:textSize="20sp"
+                />
+
+            <CheckBox
+                android:visibility="gone"
+
+                android:id="@+id/checkbox5"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:button="@drawable/checkbox_selector"
+                android:text="Disable  Parking"
+                android:textSize="20sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/image1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checkbox"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Free Parking"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checkbox"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Paid Parking"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checkbox"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Motor Cycle"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image4"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checkbox"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="RV parking"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/image5"
+
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checkbox"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Disable  Parking"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/left_menu_ApplyFilter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@color/green1"
+            android:gravity="center"
+            android:text="Apply Filter"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/left_menu_logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@color/green1"
+            android:gravity="center"
+            android:text="LOGOUT"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+    </LinearLayout>
+</ScrollView>

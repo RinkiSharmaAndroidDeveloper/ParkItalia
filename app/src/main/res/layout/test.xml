@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+           android:id="@+id/rl1"
+            >
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/fragment_map_tv_distance"
+                android:text="Cattedrale di Santa Maria
+ Piazza del Duomo, 1, 52044 Cortona AR, Italy
+43.276427, 11.984218"
+                android:layout_alignEnd="@+id/fragment_map_tv_take_me"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_map_tv_take_me"
+                android:layout_below="@+id/fragment_map_tv_distance"
+                android:text="TAKE ME HERE "/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:layout_below="@+id/fragment_map_tv_take_me"
+                android:text="Save Location"
+                android:background="@drawable/button_corner_circular"
+                />
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/clickmaptype"
+                android:src="@drawable/mapsatellite"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_account"
+            android:layout_width="175dp"
+            android:layout_height="81dp"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:layout_weight="0.27">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="3"
+                android:src="@drawable/nnnusericon"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:text="My Account"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/findmycar"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:src="@drawable/nnnfindmycar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:text="Find My Car"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+</FrameLayout>

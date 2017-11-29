@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1.2"
+        android:background="@color/green2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:id="@+id/back_button"
+            android:layout_gravity="left|center"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="My Accout"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Fname+Lname"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Email"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:background="@drawable/edbg"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="Name:"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/nameprofile"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3.5"
+                android:gravity="center|left"
+
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:background="@drawable/edbg"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+
+                android:text="Email:"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/email_profile"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3.5"
+                android:gravity="center|left"
+
+
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

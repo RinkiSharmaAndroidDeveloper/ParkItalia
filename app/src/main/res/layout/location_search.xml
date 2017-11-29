@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:padding="2dp"
+
+            android:src="@drawable/backblack"
+            android:id="@+id/back_button"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Search By Last Location"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </FrameLayout>
+    <TextView
+        android:layout_margin="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green2"
+        android:id="@+id/lastlocation"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+
+
+
+</LinearLayout>

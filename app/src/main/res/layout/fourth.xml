@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgreen"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/top_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="2.3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Find Closest Parking "
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Turn on your GPS and see all parking options close-by."
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="2.9"
+                android:background="@drawable/map">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="Enter the destination address and find parking options close-by."
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:visibility="gone"
+                android:layout_weight="2"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:weightSum="4"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/car4"
+                            android:layout_weight="0.5"
+                            />
+
+                       <!--     <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:text="Losum Ipsum"
+                       android:textSize="20dp"
+                       android:textColor="#000"
+                       android:layout_weight="3" />
+-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pie"
+                        android:layout_weight="0.5"
+                        />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".9"
+                    android:weightSum="4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/lessthan"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Losum Ipsum"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_weight="3" />
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="25sp"
+                        android:src="@drawable/onicon"
+                        android:layout_weight="0.5"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/pt"
+                    android:layout_weight="0.5"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Losum Ipsum"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:layout_weight="3"
+                    android:id="@+id/textView2" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:src="@drawable/officon"
+                    android:layout_weight="0.4"
+                    />
+
+            </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="0.3"/>
+    <FrameLayout
+        android:id="@+id/skip_screen"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:layout_weight=".7"
+
+        android:gravity="end">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circle"
+                android:layout_weight="0.01" />
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circle"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circlegreen"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circle"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tutorial_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:layout_gravity="center|right"
+
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="Skip"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

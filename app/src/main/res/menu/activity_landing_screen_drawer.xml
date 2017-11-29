@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/user"
+            android:title="User Name"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/srch"
+            android:title="Search"/>
+
+    </group>
+
+    <item android:title="Filters">
+
+        <menu>
+            <item
+                android:actionLayout="@layout/button"
+                android:title="Reset Filter"/>
+        </menu>
+    </item>
+
+</menu>

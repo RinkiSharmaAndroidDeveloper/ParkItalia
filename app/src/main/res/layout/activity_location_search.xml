@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="40sp">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:padding="2dp"
+
+            android:src="@drawable/backblack"
+            android:id="@+id/back_button"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search By Address"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/activity_location_search_et_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/srchblack"
+        android:gravity="bottom"
+        android:hint="search"
+        android:inputType="textCapWords"
+        android:maxLines="2"
+        android:minLines="2"/>
+
+    <ListView
+        android:id="@+id/activity_location_search_lv_locations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="true"
+        android:groupIndicator="@null"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"/>
+</LinearLayout>

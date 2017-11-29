@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/information_accomodation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="ACCOMODATIONS"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/information_dining"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="DINING"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/information_terms_servicesprovide"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="SERVICES"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/information_terms_toptours"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="TOP TOURS"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/information_terms_roadsign"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="ITALIAN ROAD SIGN"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/information_terms_emergencycontact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="EMERGENCY CONTACTS"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/information_what_new"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="WHAT'S NEW"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/information_share_app"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="SHARE THE APP"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/information_rate_app"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="RATE THE APP"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/information_send_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="SEND FEEDBACK"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/information_like_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="LIKE US ON FACEBOOK"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/information_follow_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="@color/green2"
+        android:gravity="center"
+        android:text="FOLLOW US ON INSTAGRAM"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/information_privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="PRIVACY POLICY"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/information_terms_service"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/green2"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="TERMS OF SERVICE"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+</LinearLayout>

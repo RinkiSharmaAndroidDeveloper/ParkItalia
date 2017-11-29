@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgreen"
+    android:orientation="vertical"
+    android:weightSum="10"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.8"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/p_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1.7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Find Your Parked Car "
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"/>
+
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/map">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="Get walking directions back to your car. "
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+         <!--   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/mid_back"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|right">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/alrm"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/mob"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/run"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/p"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="0sp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center|top"
+                            android:text="Set Timer"
+
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center|top"
+                            android:text="Mobile play"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center|top"
+                            android:text="walk to car"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center|top"
+                            android:text="Rules"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/skip_screen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:layout_weight="1"
+
+        android:gravity="end">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circle"
+                android:layout_weight="0.01" />
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circlegreen"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circle"/>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circle"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tutorial_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:layout_gravity="center|right"
+
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="Skip"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
